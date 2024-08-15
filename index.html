@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="websiteStyles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://kit.fontawesome.com/e1d95b8598.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="light">
+    <!-- Navbar -->
+    <div id="header">
+        <div class="main-container">
+            <nav>
+                <img src="logo.jpg" alt="Logo" class="logo">
+                <div class="menu-icon" id="menu-icon">
+                    <i class="fas fa-bars" onclick="toggleMenu()"></i>
+                </div>
+                <ul id="sidemenu" class="sidemenu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#landowners">For Landowners</a></li>
+                    <li><a href="#tenants">For Tenants</a></li>
+                    <li><a href="#merchants">For Merchants</a></li>
+                </ul>
+                <div class="auth-links">
+                    <a href="signup.html">Sign Up</a>
+                    <a href="login.html">Login</a>
+                </div>
+            </nav>
+            
+            <section id="home">
+                <div id="content" class="header-content">
+                    <div class="header-text">
+                    <p><span class="renters-ecosystem">A Renters Ecosystem</span></p>
+                    <h1>Turn the City into a connected network of tenants, landowners, and merchants.</h1>
+                </div>
+                <div class="images">
+                    <img src="person.png" alt="Person" class="person">
+                </div>
+            </div>
+        
+            <section id="landowners">
+                <div class="container-content">
+                    <!-- Add your image here -->
+                    <div class="main-top-content">
+                        <h1>For Landowners</h1>
+                        <h2>enhance your property<br>management with our tools.</h2>
+                        <img src="pic2.jpg" alt="Description of image" class="bottom-left-image">
+                    </div>
+                    <div class="buttons-container">
+                        <div class="buttons">
+                            <button id="managePropertyBtn" class="btn btn-primary">
+                                <i class="fas fa-cogs"></i> manage your property
+                            </button>
+                            <button id="propertyInsightsBtn" class="btn btn-secondary">
+                                <i class="fas fa-chart-line"></i> property insights
+                            </button>
+                        </div>
+            
+                        <div id="managePropertyContent" class="content">
+                            <div class="steps">
+                                <div class="step">
+                                    <span class="step-number">01.</span>
+                                    <div class="step-content">
+                                        <span class="step-title">streamline tenant management</span>
+                                        <p class="step-description">Don't rely on blind faith. Get full transparency on your
+                                            building’s operations with our management solution</p>
+                                    </div>
+                                </div>
+            
+                                <div class="step">
+                                    <span class="step-number">02.</span>
+                                    <div class="step-content">
+                                        <span class="step-title">maximize rental income</span>
+                                        <p class="step-description">Skip the broker fees. Get unlimited tenant leads for free with
+                                            our
+                                            rental marketplace solution</p>
+                                    </div>
+                                </div>
+            
+                                <div class="step">
+                                    <span class="step-number">03.</span>
+                                    <div class="step-content">
+                                        <span class="step-title">reduce administrative work</span>
+                                        <p class="step-description">Boost your business with real-time rental market analytics</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <div id="propertyInsightsContent" class="content">
+                            <div class="steps">
+                                <div class="step">
+                                    <span class="step-number">01.</span>
+                                    <div class="step-content">
+                                        <span class="step-title">get unlimited leads</span>
+                                        <p class="step-description">List your property on our marketplace and get unlimited leads
+                                            on
+                                            tenants for free</p>
+                                    </div>
+                                </div>
+            
+                                <div class="step">
+                                    <span class="step-number">02.</span>
+                                    <div class="step-content">
+                                        <span class="step-title">rent reminders</span>
+                                        <p class="step-description">Get rent paid faster and easily by sending auto reminders to
+                                            tenants
+                                        </p>
+                                    </div>
+                                </div>
+            
+                                <div class="step">
+                                    <span class="step-number">03.</span>
+                                    <div class="step-content">
+                                        <span class="step-title">our app</span>
+                                        <p class="step-description">Make it easy for your tenant to onboard, KYC and signing rent
+                                            agreement digitally</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+    <!-- for tenants-->
+
+    <section id="tenants">
+        <div class="container-content">
+            <div class="main-top-content">
+                <div class="text-content">
+                <h1>For Tenants</h1>
+                <h2>elevate your rental<br> experience with us</h2>
+                </div>
+                <img src="pic2.jpg" alt="Description of image" class="bottom-left-image">
+            </div>
+            <div class="buttons-container">
+                <div class="buttons">
+                    <button id="findPropertyBtn" class="btn btn-primary">
+                        <i class="fas fa-search"></i> find a property
+                    </button>
+                    <button id="experienceStayBtn" class="btn btn-secondary">
+                        <i class="fas fa-mobile-alt"></i> experience a digital stay
+                    </button>
+                </div>
+    
+                <div id="findPropertyContent" class="content">
+                    <div class="steps">
+                        <div class="step">
+                            <span class="step-number">01.</span>
+                            <div class="step-content">
+                                <span class="step-title">explore properties</span>
+                                <p class="step-description">You can directly
+                                    contact building
+                                    Owner. Hassle free way of finding a dream place to live</p>
+                            </div>
+                        </div>
+    
+                        <div class="step">
+                            <span class="step-number">02.</span>
+                            <div class="step-content">
+                                <span class="step-title">get rewards</span>
+                                <p class="step-description">Earn bunny points on rent and use them for shopping, dining, or
+                                    travel!</p>
+                            </div>
+                        </div>
+    
+                        <div class="step">
+                            <span class="step-number">03.</span>
+                            <div class="step-content">
+                                <span class="step-title">our app</span>
+                                <p class="step-description">Why live like it's the Stone Age? Manage your stay with our
+                                    tenant
+                                    app</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div id="experienceStayContent" class="content">
+                    <div class="steps">
+                        <div class="step">
+                            <span class="step-number">01.</span>
+                            <div class="step-content">
+                                <span class="step-title">online payments</span>
+                                <p class="step-description">Pay rent from credit card, debit card or UPI and get rent 
+                                    receipt instantly</p>
+                            </div>
+                        </div>
+    
+                        <div class="step">
+                            <span class="step-number">02.</span>
+                            <div class="step-content">
+                                <span class="step-title">seamless communication</span>
+                                <p class="step-description">View 360° room videos and local info. Chat directly with
+                                    managers and book visits </p>
+                            </div>
+                        </div>
+    
+                        <div class="step">
+                            <span class="step-number">03.</span>
+                            <div class="step-content">
+                                <span class="step-title">24/7 support</span>
+                                <p class="step-description">Get instant assistance with our round-the-clock support team
+                                    </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Merchants Section -->
+    <section id="merchants" class="container-content">
+        <div class="main-top-content">
+            <h1>For Merchants</h1>
+            <h2>expand your reach and engage with our network</h2>
+            <img src="pic2.jpg" alt="Description of image" class="bottom-left-image">
+        </div>
+        <div class="buttons-container">
+            <div class="buttons">
+                <button id="boostReachBtn" class="btn btn-primary">
+                    <i class="fas fa-bullhorn"></i> Boost Reach
+                </button>
+                <button id="enhanceEngagementBtn" class="btn btn-secondary">
+                    <i class="fas fa-users"></i> Enhance Engagement
+                </button>
+            </div>
+
+            <div id="boostReachContent" class="content">
+                <div class="steps">
+                    <div class="step">
+                        <span class="step-number">01.</span>
+                        <div class="step-content">
+                            <span class="step-title">targeted Advertising</span>
+                            <p class="step-description">Reach your target audience for free using our merchant enhance
+                                solution.</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <span class="step-number">02.</span>
+                        <div class="step-content">
+                            <span class="step-title">list on Marketplace</span>
+                            <p class="step-description">List your products on our marketplace and let tenants discover
+                                your business.</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <span class="step-number">03.</span>
+                        <div class="step-content">
+                            <span class="step-title">create Rewards</span>
+                            <p class="step-description">Offer bunny points to tenants on purchases made from your store.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="enhanceEngagementContent" class="content">
+                <div class="steps">
+                    <div class="step">
+                        <span class="step-number">01.</span>
+                        <div class="step-content">
+                            <span class="step-title">offer Deals</span>
+                            <p class="step-description">Give tenants exclusive offers and discounts to increase customer
+                                loyalty.</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <span class="step-number">02.</span>
+                        <div class="step-content">
+                            <span class="step-title">engage Locally</span>
+                            <p class="step-description">Organize tenant events and get to know your customers better.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <span class="step-number">03.</span>
+                        <div class="step-content">
+                            <span class="step-title">build Relationships</span>
+                            <p class="step-description">Create long-lasting relationships with tenants through our
+                                engagement tools.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- <--- footer section ---->
+   
+    <script src="./websiteScript.js"></script>
+</body>
+
+</html>
