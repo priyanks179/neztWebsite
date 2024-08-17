@@ -44,28 +44,40 @@ document.addEventListener('DOMContentLoaded', function () {
     // Tenants section
     document.getElementById('findPropertyBtn').addEventListener('click', function () {
         toggleContent('findPropertyContent', 'experienceStayContent');
+        document.getElementById('experienceStayBtn').classList.remove('selectedButton');
+        document.getElementById('findPropertyBtn').classList.add('selectedButton');
     });
 
     document.getElementById('experienceStayBtn').addEventListener('click', function () {
         toggleContent('experienceStayContent', 'findPropertyContent');
+        document.getElementById('findPropertyBtn').classList.remove('selectedButton');
+        document.getElementById('experienceStayBtn').classList.add('selectedButton');
     });
 
     // Landowners section
     document.getElementById('managePropertyBtn').addEventListener('click', function () {
         toggleContent('managePropertyContent', 'propertyInsightsContent');
+        document.getElementById('propertyInsightsBtn').classList.remove('selectedButton');
+        document.getElementById('managePropertyBtn').classList.add('selectedButton');
     });
 
     document.getElementById('propertyInsightsBtn').addEventListener('click', function () {
         toggleContent('propertyInsightsContent', 'managePropertyContent');
+        document.getElementById('propertyInsightsBtn').classList.add('selectedButton');
+        document.getElementById('managePropertyBtn').classList.remove('selectedButton');
     });
 
    // Merchants section
 document.getElementById('boostReachBtn').addEventListener('click', function () {
     toggleContent('boostReachContent', 'enhanceEngagementContent');
+    document.getElementById('enhanceEngagementBtn').classList.remove('selectedButton');
+    document.getElementById('boostReachBtn').classList.add('selectedButton');
 });
 
 document.getElementById('enhanceEngagementBtn').addEventListener('click', function () {
     toggleContent('enhanceEngagementContent', 'boostReachContent');
+    document.getElementById('boostReachBtn').classList.remove('selectedButton');
+    document.getElementById('enhanceEngagementBtn').classList.add('selectedButton');
 });
 
     // Set default content for each section

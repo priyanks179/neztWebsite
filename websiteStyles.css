@@ -1,9 +1,27 @@
 /* Global Styles */
+*,:after,:before {
+  --tw-border-opacity: 1;
+  --tw-bg-opacity: 1;
+}
+
 * {
   margin: 0;
   padding: 0;
   font-family: "Poppins", sans-serif;
   box-sizing: border-box;
+}
+
+.selectedButton {
+  background-color: rgb(255 237 186 / var(--tw-bg-opacity)) !important;
+  border-color: rgb(255 206 68 / var(--tw-border-opacity)) !important;
+}
+
+#license {
+  background-color:  rgb(244 244 244 / var(--tw-bg-opacity)) !important;
+  width: 100%;
+  padding: 12px;
+  color: rgb(88 88 88 / var(--tw-text-opacity)) !important;
+  font-family: __metropolis_8f55fa, __metropolis_Fallback_8f55fa;
 }
 
 #tenants .container-content {
@@ -129,13 +147,13 @@
   font-family: "Qanelas Soft", sans-serif;
   font-size: 1.1em;
 }
-#tenants .btn-primary:hover {
+/* #tenants .btn-primary:hover {
   background-color: #C8A2C8;
-}
+} */
 
-#tenants .btn-secondary:hover {
+/* #tenants .btn-secondary:hover {
   background-color: #C8A2C8;
-}
+} */
 #tenants .btn-primary {
   background-color: #e0e0e0;
   color: #4b0082;
@@ -153,7 +171,7 @@ section {
   padding: 20px 0 30px; /* Reduced from 60px to 20px */
 }
 #landowners, #tenants, #merchants {
-  margin-top: 100px; /* Adjust based on your navbar height */
+  margin-top: 0; /* Adjust based on your navbar height */
 }
 #home {
   padding-top: 100px;
@@ -210,7 +228,7 @@ body {
 .container-content {
   max-width: 1200px;
   margin: 0 auto;
-  height: 100vh;
+  height: 90vh;
   padding: 20px;
   display: flex;
   justify-content: space-between;
@@ -234,6 +252,66 @@ nav .logo {
   color: #f1f8fc;
   position: absolute;
   left: 20px;
+}
+
+#footerParent {
+  position: absolute;
+  width: 100%;
+  left: 0;
+}
+
+#footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #e9e8e8;
+  z-index: 1000;
+  flex-wrap: wrap;
+  padding: 20px 20px 10px 20px;
+}
+
+#footer .logo {
+  height: 25px;
+}
+
+#footer .data {
+  color: #000;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: "Inter", sans-serif;
+}
+
+.footerContent {
+  font-family: "Qanelas Soft", sans-serif !important;
+  font-weight: 300;
+}
+
+#teamContent {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-around;
+}
+
+.teamData img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.teamData .name {
+  font-family: "Qanelas Soft", sans-serif !important;
+  font-weight: 400;
+  text-align: center;
+  padding: 3px;
+}
+
+.teamData .position {
+  font-family: "Qanelas Soft", sans-serif !important;
+  font-weight: 300;
+  text-align: center;
+  padding: 3px;
 }
 
 nav ul {
@@ -376,18 +454,18 @@ nav .fas {
   color: #4b0082;
 }
 
-.btn-primary:hover {
+/* .btn-primary:hover {
   background-color: #C8A2C8;
-}
+} */
 
 .btn-secondary {
   background-color: #e0e0e0;
   color: #4b0082;
 }
 
-.btn-secondary:hover {
+/* .btn-secondary:hover {
   background-color: #C8A2C8;
-}
+} */
 
 .content {
   display: none;
@@ -712,6 +790,29 @@ h2 {
   color: #fff;
 }
 
+nav {
+  justify-content: space-around;
+}
+
+#tenants, #merchants {
+  margin-top: 0; /* Adjust based on your navbar height */
+}
+
+nav .logo { /*priyank*/
+  position: initial;
+}
+
+#footer .data {
+  padding-right: 80px;
+}
+#company {
+  padding-top: 25px;
+}
+
+.images {
+  display: none;
+}
+
   nav ul {
     display: none;
     flex-direction: column;
@@ -894,21 +995,17 @@ h2 {
   }
   #landowners{
   padding-top: 0px;  /* Smaller margin for mobile */
-  min-height: 135vh;
+  min-height: 110vh;
   }
   
   
-  #tenants{
-    min-height: 128vh;
+  #tenants1{
+    min-height: 125vh;
   padding-top: -500px;
   }
   #merchants {
-    min-height: 100vh;
+    min-height: 105vh;
   padding-top: -500px; /* Reduce this value further if needed */
   }
   
 }
-  
-
-
-
