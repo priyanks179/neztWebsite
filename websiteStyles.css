@@ -229,14 +229,14 @@ body {
 }
 
 .main-container {
-  height: 100vh;
+  /* height: 100vh; */
 }
 
 .container,
 .container-content {
   max-width: 1200px;
   margin: 0 auto;
-  height: 90vh;
+  /* height: 90vh; */
   padding: 20px;
   display: flex;
   justify-content: space-between;
@@ -1011,27 +1011,27 @@ nav .logo { /*priyank*/
     margin-bottom: 20px;
   }
   #home{
-    min-height: 0vh;
+    /* min-height: 0vh; */
     padding-top: 60px;  /* Smaller margin for mobile */
   }
   #landowners{
   padding-top: 0px;  /* Smaller margin for mobile */
-  min-height: 150vh;
+  /* min-height: 150vh; */
   }
   
   
   #tenants1{
-    min-height: 125vh;
+    /* min-height: 125vh; */
   padding-top: -500px;
   }
   #merchants {
-    min-height: 140vh;
+    /* min-height: 140vh; */
   padding-top: -500px; /* Reduce this value further if needed */
   }
   
 }
 
-@media (max-width: 390px) {
+/* @media (max-width: 390px) {
   #merchants {
     min-height: 115vh;
   }
@@ -1079,4 +1079,4 @@ nav .logo { /*priyank*/
   #landowners {
     min-height: 120vh;
   }
-}
+} */
